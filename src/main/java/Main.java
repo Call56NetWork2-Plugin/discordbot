@@ -30,5 +30,8 @@ public class Main extends ListenerAdapter {
         if(message.getContentRaw().equals("!help")) {
             message.getChannel().sendMessage("Coming soon").queue();
         }
+        if(message.getContentRaw().equals("!ip")) {
+            message.getChannel().sendMessage("IP: mc.call56s.work").queue();
+        }
     }
 }
