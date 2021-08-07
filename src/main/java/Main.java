@@ -12,7 +12,7 @@ import javax.security.auth.login.LoginException;
 
 public class Main extends ListenerAdapter {
     public static void main(String[] args) throws LoginException {
-        JDABuilder builder = JDABuilder.createDefault("Token"); // Token
+        JDABuilder builder = JDABuilder.createDefault(process.env.TOKEN); // Token
         builder.addEventListeners(new Main());
         builder.setActivity(Activity.playing("!help"));
         builder.enableIntents(GatewayIntent.GUILD_PRESENCES);
