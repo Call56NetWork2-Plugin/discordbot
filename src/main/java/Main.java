@@ -28,10 +28,10 @@ public class Main extends ListenerAdapter {
     public void onMessageReceived(@NotNull MessageReceivedEvent event) {
         Message message = event.getMessage();
         if(message.getContentRaw().equals("!help")) {
-            message.getChannel().sendMessage("Coming soon").queue();
+            message.getChannel().sendMessage("!ip: サーバーアドレス表示").queue();
         }
         if(message.getContentRaw().equals("!ip")) {
-            message.getChannel().sendMessage("IP: mc.call56s.work").queue();
+            message.getChannel().sendMessage("IP: mc.call56s.work:36022").queue();
         }
     }
 }
